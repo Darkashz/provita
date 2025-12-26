@@ -362,15 +362,42 @@ body {
   color: #777;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .footer-grid {
-    text-align: center;
-  }
+/* =========================
+   FOOTER – MOBILE CLEAN
+========================= */
 
-  .footer-desc {
-    margin: 0 auto;
-  }
+.footer-grid {
+  grid-template-columns: 1fr;
+  gap: 20px;
+  text-align: center;
+}
+
+.footer-logo {
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.footer-desc {
+  max-width: 300px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ASCUNDEM LISTELE PE MOBIL */
+.footer-col ul {
+  display: none;
+}
+
+/* TITLURI MAI MICI */
+.footer-col h4 {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-bottom {
+  font-size: 12px;
+  padding: 15px 0;
 }
 
 /* =========================
@@ -464,10 +491,6 @@ body {
   }
 
   /* FOOTER */
-  .footer-grid {
-    text-align: center;
-    gap: 30px;
-  }
 
   .footer-logo {
     justify-content: center;
