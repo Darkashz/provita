@@ -476,7 +476,7 @@ body {
 }
 
 /* =========================
-   MOBILE MENU – FIX FINAL
+   MOBILE MENU – PREMIUM
 ========================= */
 .menu-toggle {
   display: none;
@@ -496,27 +496,36 @@ body {
     display: block;
   }
 
-  /* suprascriem ORICE stil anterior */
+  /* MENIU MOBIL ANIMAT */
   .main-nav {
-    display: none !important;
-    flex-direction: column;
     position: absolute;
     top: 70px;
     right: 20px;
     background: #fff;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 16px;
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
     z-index: 999;
-    min-width: 200px;
+    min-width: 220px;
+
+    /* STARE INCHISA */
+    opacity: 0;
+    transform: translateY(-10px) scale(0.98);
+    pointer-events: none;
+
+    /* ANIMATIE */
+    transition: opacity 0.25s ease, transform 0.25s ease;
   }
 
   .main-nav a {
-    margin: 8px 0;
+    margin: 10px 0;
     padding: 8px 0;
   }
 
+  /* STARE DESCHISA */
   .main-nav.open {
-    display: flex !important;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    pointer-events: auto;
   }
 }
