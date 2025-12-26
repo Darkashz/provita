@@ -428,3 +428,95 @@ body {
   opacity: 0.25;
   margin-bottom: 18px;
 }
+
+/* =========================
+   MOBILE MENU – FIX FINAL
+========================= */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--secondary);
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* suprascriem ORICE stil anterior */
+  .main-nav {
+    display: none !important;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    min-width: 200px;
+  }
+
+  .main-nav a {
+    margin: 8px 0;
+    padding: 8px 0;
+  }
+
+  .main-nav.open {
+    display: flex !important;
+  }
+}
+
+/* =========================
+   MOBILE MENU – FIX FINAL
+========================= */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--secondary);
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* suprascriem ORICE stil anterior */
+  .main-nav {
+    display: none !important;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    z-index: 999;
+    min-width: 200px;
+  }
+
+  .main-nav a {
+    margin: 8px 0;
+    padding: 8px 0;
+  }
+
+  .main-nav.open {
+    display: flex !important;
+  }
+}
