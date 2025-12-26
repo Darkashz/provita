@@ -430,53 +430,9 @@ body {
 }
 
 /* =========================
-   MOBILE MENU – FIX FINAL
-========================= */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: var(--secondary);
-}
-
-@media (max-width: 768px) {
-  .header-inner {
-    position: relative;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  /* suprascriem ORICE stil anterior */
-  .main-nav {
-    display: none !important;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 20px;
-    background: #fff;
-    border-radius: 8px;
-    padding: 16px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-    z-index: 999;
-    min-width: 200px;
-  }
-
-  .main-nav a {
-    margin: 8px 0;
-    padding: 8px 0;
-  }
-
-  .main-nav.open {
-    display: flex !important;
-  }
-}
 
 /* =========================
-   MOBILE MENU – PREMIUM CENTERED
+   MOBILE MENU – PREMIUM CENTERED + ANIMATED
 ========================= */
 .menu-toggle {
   display: none;
@@ -497,30 +453,7 @@ body {
     z-index: 1001;
   }
 
-  /* =========================
-   MOBILE MENU – PREMIUM ANIMATED
-========================= */
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 28px;
-  cursor: pointer;
-  color: var(--secondary);
-}
-
-@media (max-width: 768px) {
-
-  .header-inner {
-    position: relative;
-  }
-
-  .menu-toggle {
-    display: block;
-    z-index: 1001;
-  }
-
-  /* MENIU MOBIL */
+  /* dropdown centered */
   .main-nav {
     position: absolute;
     top: 70px;
@@ -534,13 +467,10 @@ body {
     z-index: 1000;
     min-width: 260px;
 
-    /* STARE INCHISA */
     opacity: 0;
     pointer-events: none;
 
-    /* ANIMATIE PREMIUM */
-    transition:
-      opacity 0.35s ease,
+    transition: opacity 0.35s ease,
       transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
   }
 
@@ -549,14 +479,11 @@ body {
     margin: 14px 0;
     padding: 6px 0;
     text-align: center;
-    transition: color 0.2s ease;
   }
 
-  /* STARE DESCHISA */
   .main-nav.open {
     opacity: 1;
     transform: translate(-50%, 0) scale(1);
     pointer-events: auto;
   }
 }
-
