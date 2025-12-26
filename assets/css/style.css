@@ -214,12 +214,23 @@ body {
   font-size: 13px;
 }
 
-/* MOBILE */
+/* MOBILE – FIX FINAL */
 @media (max-width: 768px) {
   .header-inner {
     flex-direction: column;
     height: auto;
     padding: 15px 0;
+  }
+
+  .main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .main-nav a {
+    margin: 0;
   }
 
   .hero {
@@ -234,12 +245,9 @@ body {
     padding: 50px 0;
   }
 
-  /* FOOTER MOBILE GRUPAT */
+  /* FOOTER MOBILE – GRUPAT */
   .footer-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
+    display: block;
     text-align: center;
   }
 
@@ -253,9 +261,8 @@ body {
   }
 
   .footer-cta {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+    display: block;
+    margin: 20px auto;
   }
 
   .footer-cta .btn-primary {
